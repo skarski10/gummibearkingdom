@@ -2,28 +2,83 @@
 
 <html>
 <head>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-default" id="header">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand">@Html.ActionLink("Welcome to the Gummi Bear Kingdom!", "Index", "")</a>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Home", "Index", "")</li>
-                    <li>@Html.ActionLink("Products", "Index", "Product")</li>
-                    <li></li>
-                </ul>
+    <nav class="navbar navbar-default" id="header">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">@Html.ActionLink("Welcome to the Gummi Bear Kingdom!", "Index", "")</a>
             </div>
-        </nav>
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Home", "Index", "")</li>
+                <li>@Html.ActionLink("Products", "Index", "Product")</li>
+                <li></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        
         <div>
             @RenderBody()
         </div>
     </div>
+    <hr />
+    <footer>
+        <div class="row jumbotron">
+            <div class="span12">
+                <div class="span2 col-md-4" style="width: 25%;">
+                    <ul class="unstyled">
+                        <h5>Company</h5>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Numbers & Facts</a></li>
+                        <li><a href="#">International</a></li>
+                        <li><a href="#">Gummi Bear Kington</a></li>
+                    </ul>
+                </div>
+                <div class="span2 col-md-4" style="width: 25%;">
+                    <ul class="unstyled">
+                        <h5>Current Information</h5>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="span2 col-md-4" style="width: 25%;">
+                    <ul class="unstyled">
+                        <h5>Products</h5>
+                        <li><a href="#">Candies</a></li>
+                        <li><a href="#">Gummies</a></li>
+                        <li><a href="#">Survival</a></li>
+                    </ul>
+                </div>
+                <div class="span2 col-md-4" style="width: 25%;">
+                    <ul class="unstyled">
+                        <h5>Consumer Information</h5>
+                        <li><a href="#">Gummies</a></li>
+                        <li><a href="#">Repellents</a></li>
+                        <li><a href="#">Quality requirements</a></li>
+                        <li><a href="#">Advertising & Marketing</a></li>
+                        <li><a href="#">Product Locator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="span12">
+                <div class="span8">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Security</a>
+                </div>
+                <div class="span4">
+                    <p class="muted pull-right">©Gummi Bear Kingdom 2017 Company Name. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
