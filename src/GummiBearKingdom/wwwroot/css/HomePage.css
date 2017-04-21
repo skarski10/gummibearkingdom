@@ -1,0 +1,9 @@
+﻿.jumbotron {
+    background-image: url(../img/gummibears.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: auto;
+}
