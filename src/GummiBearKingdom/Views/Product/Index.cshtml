@@ -20,15 +20,11 @@
     {
         <tr>
             <td>
-                <img src="@Url.Content(Model.Image)" alt="Image" />
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => listProduct.Name)
+                @Html.ActionLink(listProduct.Name, "Details", new { id = listProduct.ProductId })
             </td>
             
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = listProduct.ProductId }) |
-                @Html.ActionLink("Details", "Details", new { id = listProduct.ProductId }) |
                 @Html.ActionLink("Delete", "Delete", new { id = listProduct.ProductId })
             </td>
         </tr>
