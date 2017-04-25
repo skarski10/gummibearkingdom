@@ -25,6 +25,8 @@ namespace GummiBearKingdom.Migrations
 
                     b.Property<string>("CountryOfOrigin");
 
+                    b.Property<string>("Image");
+
                     b.Property<string>("Name");
 
                     b.HasKey("ProductId");
