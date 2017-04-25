@@ -1,6 +1,6 @@
 # _{Gummi Bear Kingdom}_
 
-#### _{Brief description of application}}_
+#### _{Brief description of application}_
 
 #### By _**{Kory Skarbek}**_
 
